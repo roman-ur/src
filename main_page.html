@@ -7,46 +7,1101 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0"/><!-- CORE CSS -->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css"/><!-- THEME CSS -->
-    <link rel="stylesheet" href="lib/essentials/essentials.css"/>
-    <link rel="stylesheet" href="lib/layout/layout.css"/>
+    <link rel="stylesheet" href="css/essentials.css"/>
+    <link rel="stylesheet" href="css/layout.css"/><!-- PAGE LEVEL SCRIPTS -->
+    <link rel="stylesheet" href="css/header-1.css"/>
+    <link rel="stylesheet" href="css/green.css"/><!-- DATATABLES -->
+    <link rel="stylesheet" href="css/layout-datatables.css"/>
   </head>
-  <body class="smoothscroll enable-animation"><!-- Slide Top -->
+  <body class="smoothscroll enable-animation"><!-- SLIDE TOP -->
     <div id="slidetop">
       <div class="container"></div><a class="slidetop-toggle" href="#"></a>
-    </div><!-- wrapper -->
-    <div id="wrapper"><!-- Top Bar -->
+    </div><!-- /SLIDE TOP -->
+<!-- wrapper -->
+    <div id="wrapper"><!-- TOP BAR -->
       <div id="topBar">
         <div class="container"><!-- right -->
           <ul class="top-links list-inline pull-right">
             <li class="text-welcome hidden-xs">Welcome to Smarty, <strong>John Doe</strong></li>
-            <li><a class="dropdown-toggle no-text-underline" data-toggle="dropdown"><i class="fa fa-user hidden-xs"></i></a>My account</li>
-            <li><a class="dropdown-toggle no-text-underline" data-toggle="dropdown">
-                <ul class="dropdown-menu pull-right">
-                  <li><a tabindex="-1" href="#"></a></li>
-                  <li class="divider"><a tabindex="-1" href="#"></a></li>
-                  <li><a tabindex="-1" href="#"></a></li>
-                  <li><a tabindex="-1" href="#"></a></li>
-                  <li><a tabindex="-1" href="#"></a></li>
-                  <li class="divider"><a tabindex="-1" href="#"></a></li>
-                  <li><a tabindex="-1" href="#"></a></li>
-                </ul></a></li>
+            <li><a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i class="fa fa-user hidden-xs"></i> MY ACCOUNT</a>
+              <ul class="dropdown-menu pull-right">
+                <li><a tabindex="-1" href="#"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> MY WISHLIST</a></li>
+                <li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> MY REVIEWS</a></li>
+                <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i> MY SETTINGS</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> LOGOUT</a></li>
+              </ul>
+            </li>
             <li class="hidden-xs"><a href="#">LOGIN</a></li>
             <li class="hidden-xs"><a href="#">REGISTER</a></li>
-          </ul><!-- left -->
+          </ul>
           <ul class="top-links list-inline">
             <li class="hidden-xs"><a href="#">FAQ</a></li>
-            <li><a class="dropdown-toggle no-text-underline" href="#" data-toggle="dropdown"><img class="flag-lang" src="img/flags/us.png" alt="lang" width="16" height="11"/></a></li>
-            <li></li>
+            <li><a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><img class="flag-lang" src="img/flags/us.png" width="16" height="11" alt="lang"/> ENGLISH</a>
+              <ul class="dropdown-langs dropdown-menu">
+                <li><a tabindex="-1" href="#"><img class="flag-lang" src="img/flags/us.png" width="16" height="11" alt="lang"/> ENGLISH</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#"><img class="flag-lang" src="img/flags/de.png" width="16" height="11" alt="lang"/> GERMAN</a></li>
+                <li><a tabindex="-1" href="#"><img class="flag-lang" src="img/flags/ru.png" width="16" height="11" alt="lang"/> RUSSIAN</a></li>
+                <li><a tabindex="-1" href="#"><img class="flag-lang" src="img/flags/it.png" width="16" height="11" alt="lang"/> ITALIAN</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">USD</a>
+              <ul class="dropdown-langs dropdown-menu">
+                <li><a tabindex="-1" href="#">USD</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">EUR</a></li>
+                <li><a tabindex="-1" href="#">GBP</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="sticky clearfix" id="header"><!-- Search Header -->
+      </div><!-- /TOP BAR -->
+      <div class="sticky clearfix" id="header"><!-- SEARCH HEADER -->
         <div class="search-box over-header"><a class="glyphicon glyphicon-remove" id="closeSearch" href="#"></a>
           <form action="" method="get">
             <input class="form-control" type="text" placeholder="SEARCH"/>
           </form>
+        </div><!-- /SEARCH HEADER -->
+        <div id="topNav">
+          <div class="container"><!-- MOBILE MENU BUTTON -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse"><i class="fa fa-bars"></i></button><!-- /MOBILE MENU BUTTON -->
+<!-- BUTTONS -->
+            <ul class="pull-right nav nav-pills nav-second-main has-topBar"><!-- SEARCH -->
+              <li class="search"><a href="#"><i class="fa fa-search"></i></a></li><!-- SEARCH -->
+<!-- QUICK SHOP CART -->
+              <li class="quick-cart"><a href="#"><span class="badge badge-aqua btn-xs badge-corner">2</span><i class="fa fa-shopping-cart"></i></a>
+                <div class="quick-cart-box">
+                  <h4>Shop Cart</h4>
+                  <div class="quick-cart-wrapper"><a href="#"><img src="img/4-min.jpg" width="45" height="45" alt=""/>
+                      <h6><span>2x</span> RED BAG WITH HUGE POCKETS</h6><small>$37.21</small></a>
+                    <!-- /cart item--><a href="#">
+                      <!-- cart item--><img src="img/5-min.jpg" width="45" height="45" alt=""/>
+                      <h6><span>2x</span> THIS IS A VERY LONG TEXT AND WILL BE TRUNCATED</h6><small>$17.18</small></a>
+                    <!-- /cart item-->
+                    <!-- cart no items example-->
+                    <!--
+                    <a class="text-center" href="#">
+                    <h6>0 ITEMS ON YOUR CART</h6>
+                    </a>
+                    -->
+                  </div>
+                  <!-- quick cart footer-->
+                  <div class="quick-cart-footer clearfix"><a href="#">VIEW CART</a><span class="pull-left"><strong>TOTAL:</strong> $54.39</span></div>
+                  <!-- /quick cart footer-->
+                </div>
+              </li>
+            </ul><!-- /BUTTONS -->
+<!-- LOGO --><a class="logo pull-left" href="#"><img src="img/logo_dark.png" alt=""/></a><!-- /LOGO -->
+<!-- MAIN-MENU -->
+            <div class="navbar-collapse pull-right nav-main-collapse collapse">
+              <nav class="nav-main">
+                <!--
+                NOTE
+                For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                Direct Link Example:
+                <li>
+                <a href="#">HOME</a>
+                </li>
+                -->
+                <ul class="nav nav-pills nav-main has-topBar" id="topMain">
+                  <li class="dropdown">
+                    <!-- HOME--><a class="dropdown-toggle" href="#">HOME</a>
+                    <ul class="dropdown-menu has-topBar">
+                      <li class="dropdown"><a class="dropdown-toggle" href="#">HOME CORPORATE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="#">CORPORATE LAYOUT 1</a></li>
+                          <li><a href="#">CORPORATE LAYOUT 2</a></li>
+                          <li><a href="#">CORPORATE LAYOUT 3</a></li>
+                          <li><a href="#">CORPORATE LAYOUT 4</a></li>
+                          <li><a href="#">CORPORATE LAYOUT 5</a></li>
+                          <li><a href="#">CORPORATE LAYOUT 6</a></li>
+                          <li><a href="#">CORPORATE LAYOUT 7</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#">HOME PORTFOLIO</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="#">PORTFOLIO LAYOUT 1</a></li>
+                          <li><a href="#">PORTFOLIO LAYOUT 2</a></li>
+                          <li><a href="#">PORTFOLIO MASONRY</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#">HOME BLOG</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="#">BLOG LAYOUT 1</a></li>
+                          <li><a href="#">BLOG LAYOUT 2</a></li>
+                          <li><a href="#">BLOG LAYOUT 3</a></li>
+                          <li><a href="#">BLOG LAYOUT 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#">HOME SHOP</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="#">SHOP LAYOUT 1</a></li>
+                          <li><a href="#">SHOP LAYOUT 2</a></li>
+                          <li><a href="#">SHOP LAYOUT 3</a></li>
+                          <li><a href="#">SHOP LAYOUT 4</a></li>
+                          <li><a href="#">SHOP LAYOUT 5</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#">HOME MAGAZINE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="#">MAGAZINE LAYOUT 1</a></li>
+                          <li><a href="#">MAGAZINE LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HOME LANDING PAGE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-landing-1.html">LANDING PAGE LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-landing-2.html">LANDING PAGE LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-landing-3.html">LANDING PAGE LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-landing-4.html">LANDING PAGE LAYOUT 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-landing-5.html">LANDING PAGE LAYOUT 5</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HOME FULLSCREEN</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-fullscreen-revolution.html">FULLSCREEN - REVOLUTION</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-fullscreen-youtube.html">FULLSCREEN - YOUTUBE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-fullscreen-local-video.html">FULLSCREEN - LOCAL VIDEO</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-fullscreen-image.html">FULLSCREEN - IMAGE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-fullscreen-txt-rotator.html">FULLSCREEN - TEXT ROTATOR</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HOME ONE PAGE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-onepage-default.html">ONE PAGE - DEFAULT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-onepage-revolution.html">ONE PAGE - REVOLUTION</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-onepage-image.html">ONE PAGE - IMAGE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-onepage-parallax.html">ONE PAGE - PARALLAX</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-onepage-youtube.html">ONE PAGE - YOUTUBE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-onepage-text-rotator.html">ONE PAGE - TEXT ROTATOR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/start.html#onepage"><span class="label label-success pull-right">new</span> 10+ MORE LAYOUTS</a></li>
+                        </ul>
+                      </li>
+                      <li class="divider"></li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HOME - THEMATICS <i class="fa fa-heart margin-left-10"></i></a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-restaurant.html">HOME - RESTAURANT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-education.html">HOME - EDUCATION</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-construction.html">HOME - CONSTRUCTION</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-medical.html">HOME - MEDICAL</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-church.html">HOME - CHURCH</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-fashion.html">HOME - FASHION</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-wedding.html">HOME - WEDDING</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-events.html">HOME - EVENTS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-hosting.html">HOME - HOSTING</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-lawyer.html">HOME - LAWYER</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-thematics-music.html">HOME - MUSIC</a></li>
+                          <li><a href="http://www.stepofweb.com/propose-design.html" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Do you need a specific home design? We can include it in the next update!"><span class="label label-danger pull-right">hot</span> PROPOSE THEMATIC</a></li>
+                        </ul>
+                      </li>
+                      <li class="divider"></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/start.html#newrevslider" data-toggle="tooltip" data-placement="top" title="" data-original-title="52 More Revolution Slider V5"><span class="label label-danger pull-right">new</span> 52 MORE LAYOUTS</a></li>
+                      <li class="divider"></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-simple-revolution.html">HOME SIMPLE - REVOLUTION</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-simple-layerslider.html">HOME SIMPLE - LAYERSLIDER</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-simple-parallax.html">HOME SIMPLE - PARALLAX</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/index-simple-youtube.html">HOME SIMPLE - YOUTUBE</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <!-- PAGES--><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">PAGES</a>
+                    <ul class="dropdown-menu has-topBar">
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">MISCELLANEOUS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-music.html">MUSIC PAGE</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">ABOUT</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-us-1.html">ABOUT US - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-us-2.html">ABOUT US - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-us-3.html">ABOUT US - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-us-4.html">ABOUT US - LAYOUT 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-us-5.html">ABOUT US - LAYOUT 5</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-me-1.html">ABOUT ME - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-about-me-2.html">ABOUT ME - LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">TEAM</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-team-1.html">TEAM - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-team-2.html">TEAM - LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SERVICES</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-services-1.html">SERVICES - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-services-2.html">SERVICES - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-services-3.html">SERVICES - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-services-4.html">SERVICES - LAYOUT 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">FAQ</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-faq-1.html">FAQ - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-faq-2.html">FAQ - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-faq-3.html">FAQ - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-faq-4.html">FAQ - LAYOUT 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">CONTACT</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-contact-1.html">CONTACT - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-contact-2.html">CONTACT - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-contact-3.html">CONTACT - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-contact-4.html">CONTACT - LAYOUT 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-contact-5.html">CONTACT - LAYOUT 5</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">ERROR</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-1.html">ERROR 404 - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-2.html">ERROR 404 - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-3.html">ERROR 404 - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-4.html">ERROR 404 - LAYOUT 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-5.html">ERROR 404 - LAYOUT 5</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-6.html">ERROR 404 - LAYOUT 6</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-7.html">ERROR 404 - LAYOUT 7</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-404-8.html">ERROR 404 - LAYOUT 8</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-500-1.html">ERROR 500 - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-500-2.html">ERROR 500 - LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SIDEBAR</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-left.html">SIDEBAR LEFT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-right.html">SIDEBAR RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-both.html">SIDEBAR BOTH</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-no.html">NO SIDEBAR</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-dark-left.html">SIDEBAR LEFT - DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-dark-right.html">SIDEBAR RIGHT - DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-dark-both.html">SIDEBAR BOTH - DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sidebar-dark-no.html">NO SIDEBAR - DARK</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">LOGIN/REGISTER</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-1.html">LOGIN - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-2.html">LOGIN - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-3.html">LOGIN - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-4.html">LOGIN - LAYOUT 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-5.html">LOGIN - LAYOUT 5</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-register-1.html">LOGIN + REGISTER 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-register-2.html">LOGIN + REGISTER 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-login-register-3.html">LOGIN + REGISTER 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-register-1.html">REGISTER - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-register-2.html">REGISTER - LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">CLIENTS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-clients-1.html">CLIENTS 1 - SIDEBAR RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-clients-2.html">CLIENTS 1 - SIDEBAR LEFT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-clients-3.html">CLIENTS 1 - FULLWIDTH</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-clients-4.html">CLIENTS 2 - SIDEBAR RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-clients-5.html">CLIENTS 2 - SIDEBAR LEFT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-clients-6.html">CLIENTS 2 - FULLWIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SEARCH RESULT</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-search-result-1.html">LAYOUT 1 - LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-search-result-2.html">LAYOUT 1 - RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-search-result-3.html">LAYOUT 1 - FULLWIDTH</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-search-result-4.html">LAYOUT 2 - LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-search-result-5.html">LAYOUT 2 - RIGHT SIDEBAR</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-search-result-6.html">LAYOUT 3 - TABLE SEARCH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">PROFILE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-profile.html">USER PROFILE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-profile-projects.html">USER PROJECTS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-profile-comments.html">USER COMMENTS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-profile-history.html">USER HISTORY</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-profile-settings.html">USER SETTINGS</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">MAINTENANCE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-maintenance-1.html">MAINTENANCE - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-maintenance-2.html">MAINTENANCE - LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">COMING SOON</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-coming-soon-1.html">COMING SOON - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-coming-soon-2.html">COMING SOON - LAYOUT 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">FORUM</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-forum-home.html">FORUM - HOME</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-forum-topic.html">FORUM - TOPIC</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-forum-post.html">FORUM - POST</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-careers.html">CAREERS</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-sitemap.html">SITEMAP</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-blank.html">BLANK PAGE</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown active">
+                    <!-- FEATURES--><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">FEATURES</a>
+                    <ul class="dropdown-menu has-topBar">
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-browser"></i> SLIDERS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">REVOLUTION SLIDER 4.x</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-fullscreen.html">FULLSCREEN</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-fullwidth.html">FULL WIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-fixedwidth.html">FIXED WIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-kenburns.html">KENBURNS EFFECT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-videobg.html">HTML5 VIDEO</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-captions.html">CAPTIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-smthumb.html">THUMB SMALL</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-lgthumb.html">THUMB LARGE</a></li>
+                              <li class="divider"></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-prev1.html">NAV PREVIEW 1</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-prev2.html">NAV PREVIEW 2</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-prev3.html">NAV PREVIEW 3</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-prev4.html">NAV PREVIEW 4</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-revolution-prev0.html">NAV THEME DEFAULT</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">LAYER SLIDER</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-layer-fullwidth.html">FULLWIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-layer-fixed.html">FIXED WIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-layer-captions.html">CAPTIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-layer-carousel.html">CAROUSEL</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-layer-2d3d.html">2D & 3D TRANSITIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-layer-thumb.html">THUMB NAV</a></li>
+                              <li class="divider"></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/start.html#layerslider6"><span class="label label-success pull-right">new</span> LAYER SLIDER 6</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">FLEX SLIDER</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-flexslider-fullwidth.html">FULL WIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-flexslider-content.html">CONTENT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-flexslider-thumbs.html">WITH THUMBS</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">OWL SLIDER</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-fullwidth.html">FULL WIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-fixed.html">FIXED WIDTH</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-fixed+progress.html">FIXED + PROGRESS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-carousel.html">BASIC CAROUSEL</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-fade.html">EFFECT - FADE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-backslide.html">EFFECT - BACKSLIDE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-godown.html">EFFECT - GODOWN</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-owl-fadeup.html">EFFECT - FADE UP</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SWIPE SLIDER</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-full.html">FULLSCREEN</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-fixed-height.html">FIXED HEIGHT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-autoplay.html">AUTOPLAY</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-fade.html">FADE TRANSITION</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-slide.html">SLIDE TRANSITION</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-coverflow.html">COVERFLOW TRANSITION</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-html5-video.html">HTML5 VIDEO</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-3columns.html">3 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-swipe-4columns.html">4 COLUMNS</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-nivo.html">NIVO SLIDER</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-camera.html">CAMERA SLIDER</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-slider-elastic.html">ELASTIC SLIDER</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-hotairballoon"></i> HEADERS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-light.html">HEADER - LIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-dark.html">HEADER - DARK</a></li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HEADER - HEIGHT</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-large.html">LARGE (96px)</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-medium.html">MEDIUM (70px)</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-small.html">SMALL (60px)</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HEADER - SHADOW</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-after-1.html">SHADOW 1 - AFTER</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-before-1.html">SHADOW 1 - BEFORE</a></li>
+                              <li class="divider"></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-after-2.html">SHADOW 2 - AFTER</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-before-2.html">SHADOW 2 - BEFORE</a></li>
+                              <li class="divider"></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-after-3.html">SHADOW 3 - AFTER</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-before-3.html">SHADOW 3 - BEFORE</a></li>
+                              <li class="divider"></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-shadow-dark-1.html">SHADOW - DARK PAGE EXAMPLE</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-transparent.html">HEADER - TRANSPARENT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-transparent-line.html">HEADER - TRANSP+LINE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-translucent.html">HEADER - TRANSLUCENT</a></li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HEADER - BOTTOM</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-bottom-light.html">BOTTOM LIGHT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-bottom-dark.html">BOTTOM DARK</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-bottom-transp.html">BOTTOM TRANSPARENT</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HEADER - LEFT SIDE</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-side-left-1.html">FIXED</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-side-left-2.html">OPEN ON CLICK</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-side-left-3.html">DARK</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HEADER - RIGHT SIDE</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-side-right-1.html">FIXED</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-side-right-2.html">OPEN ON CLICK</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-side-right-3.html">DARK</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">HEADER - STATIC</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-static-top-light.html">STATIC TOP - LIGHT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-static-top-dark.html">STATIC TOP - DARK</a></li>
+                              <li class="divider"></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-static-bottom-light.html">STATIC BOTTOM - LIGHT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-static-bottom-dark.html">STATIC BOTTOM - DARK</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-header-nosticky.html">HEADER - NO STICKY</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-anchor"></i> FOOTERS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-1.html#footer">FOOTER - LAYOUT 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-2.html#footer">FOOTER - LAYOUT 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-3.html#footer">FOOTER - LAYOUT 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-4.html#footer">FOOTER - LAYOUT 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-5.html#footer">FOOTER - LAYOUT 5</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-6.html#footer">FOOTER - LAYOUT 6</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-7.html#footer">FOOTER - LAYOUT 7</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-8.html#footer">FOOTER - LAYOUT 8 (light)</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-footer-0.html#footer">FOOTER - STICKY</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown active"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-circle-compass"></i> MENU STYLES</a>
+                        <ul class="dropdown-menu active has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-0.html">MENU - OVERLAY</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-1.html">MENU - STYLE 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-2.html">MENU - STYLE 2</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-3.html">MENU - STYLE 3</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-4.html">MENU - STYLE 4</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-5.html">MENU - STYLE 5</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-6.html">MENU - STYLE 6</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-7.html">MENU - STYLE 7</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-8.html">MENU - STYLE 8</a></li>
+                          <li class="active"><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html">MENU - STYLE 9</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-10.html">MENU - STYLE 10</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-11.html">MENU - STYLE 11 (BULLET NAV)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-genius"></i> MENU DROPDOWN</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-dd-light.html">DROPDOWN - LIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-dd-dark.html">DROPDOWN - DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-dd-color.html">DROPDOWN - COLOR</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-beaker"></i> PAGE TITLES</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-left.html">ALIGN LEFT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-right.html">ALIGN RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-center.html">ALIGN CENTER</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-light.html">LIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-dark.html">DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-tabs.html">WITH TABS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-breadcrumbs.html">BREADCRUMBS ONLY</a></li>
+                          <li><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">PARALLAX</a>
+                            <ul class="dropdown-menu has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-parallax-small.html">PARALLAX SMALL</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-parallax-medium.html">PARALLAX MEDIUM</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-parallax-large.html">PARALLAX LARGE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-parallax-2xlarge.html">PARALLAX 2x LARGE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-parallax-transp.html">TRANSPARENT HEADER</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-parallax-transp-large.html">TRANSPARENT HEADER - LARGE</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-short-height.html">SHORT HEIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-title-rotative-text.html">ROTATIVE TEXT</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-layers"></i> PAGE SUBMENU</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-page-submenu-light.html">PAGE SUBMENU - LIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-page-submenu-dark.html">PAGE SUBMENU - DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-page-submenu-color.html">PAGE SUBMENU - COLOR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-page-submenu-transparent.html">PAGE SUBMENU - TRANSPARENT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-page-submenu-below-title.html">PAGE SUBMENU - BELOW PAGE TITLE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-page-submenu-scrollto.html">PAGE SUBMENU - SCROLLTO</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-trophy"></i> ICONS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-icons-fontawesome.html">FONTAWESOME</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-icons-glyphicons.html">GLYPHICONS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-icons-etline.html">ET LINE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-icons-flags.html">FLAGS</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-flag"></i> BACKGROUNDS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-content-bg-grey.html">CONTENT - SIMPLE GREY</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-content-bg-ggrey.html">CONTENT - GRAIN GREY</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-content-bg-gblue.html">CONTENT - GRAIN BLUE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-content-bg-ggreen.html">CONTENT - GRAIN GREEN</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-content-bg-gorange.html">CONTENT - GRAIN ORANGE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-content-bg-gyellow.html">CONTENT - GRAIN YELLOW</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-magnifying-glass"></i> SEARCH LAYOUTS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-search-default.html">SEARCH - DEFAULT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-search-fullscreen-light.html">SEARCH - FULLSCREEN LIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-search-fullscreen-dark.html">SEARCH - FULLSCREEN DARK</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-search-header-light.html">SEARCH - HEADER LIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-search-header-dark.html">SEARCH - HEADER DARK</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-animations.html"><i class="et-expand"></i> ANIMATIONS</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-grid.html"><i class="et-grid"></i> GRID</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-essentials.html"><i class="et-heart"></i> ESSENTIALS</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/page-changelog.html"><i class="et-alarmclock"></i> CHANGELOG</a></li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#"><i class="et-newspaper"></i> SIDE PANEL</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-sidepanel-dark-right.html">SIDE PANEL - DARK - RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-sidepanel-dark-left.html">SIDE PANEL - DARK - LEFT</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-sidepanel-light-right.html">SIDE PANEL - LIGHT - RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-sidepanel-light-left.html">SIDE PANEL - LIGHT - LEFT</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-sidepanel-color-right.html">SIDE PANEL - COLOR - RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-sidepanel-color-left.html">SIDE PANEL - COLOR - LEFT</a></li>
+                        </ul>
+                      </li>
+                      <li><a target="_blank" href="http://theme.stepofweb.com/Smarty/v1.2.1/Admin/HTML/"><span class="label label-success pull-right">BONUS</span><i class="et-gears"></i> ADMIN PANEL</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown mega-menu">
+                    <!-- PORTFOLIO--><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">PORTFOLIO</a>
+                    <ul class="dropdown-menu has-topBar">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><span>GRID</span></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-grid-1-columns.html">1 COLUMN</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-grid-2-columns.html">2 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-grid-3-columns.html">3 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-grid-4-columns.html">4 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-grid-5-columns.html">5 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-grid-6-columns.html">6 COLUMNS</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><span>MASONRY</span></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-masonry-2-columns.html">2 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-masonry-3-columns.html">3 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-masonry-4-columns.html">4 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-masonry-5-columns.html">5 COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-masonry-6-columns.html">6 COLUMNS</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><span>SINGLE</span></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-single-extended.html">EXTENDED ITEM</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-single-parallax.html">PARALLAX IMAGE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-single-slider.html">SLIDER GALLERY</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-single-html5-video.html">HTML5 VIDEO</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-single-masonry-thumbs.html">MASONRY THUMBS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-single-embed-video.html">EMBED VIDEO</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><span>LAYOUT</span></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-layout-default.html">DEFAULT</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-layout-aside-left.html">LEFT SIDEBAR</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-layout-aside-right.html">RIGHT SIDEBAR</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-layout-aside-both.html">BOTH SIDEBAR</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-layout-fullwidth.html">FULL WIDTH (100%)</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-layout-tabfilter.html">TAB FILTER & PAGINATION</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><span>LOADING</span></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-loading-pagination.html">PAGINATION</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-loading-jpagination.html">JQUERY PAGINATION</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-loading-infinite-scroll.html">INFINITE SCROLL</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-loading-ajax-page.html">AJAX IN PAGE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/portfolio-loading-ajax-modal.html">AJAX IN MODAL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <!-- BLOG--><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">BLOG</a>
+                    <ul class="dropdown-menu has-topBar">
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">DEFAULT</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-default-aside-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-default-aside-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-default-aside-both.html">BOTH SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-default-fullwidth.html">FULL WIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">GRID</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-column-2colums.html">2 COLUMNS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-column-3colums.html">3 COLUMNS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-column-4colums.html">4 COLUMNS</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-column-aside-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-column-aside-right.html">RIGHT SIDEBAR</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">MASONRY</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-masonry-2colums.html">2 COLUMNS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-masonry-3colums.html">3 COLUMNS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-masonry-4colums.html">4 COLUMNS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-masonry-fullwidth.html">FULLWIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">TIMELINE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-timeline-aside-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-timeline-aside-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-timeline-right-aside-right.html">RIGHT + TIMELINE RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-timeline-right-aside-left.html">LEFT + TIMELINE RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-timeline-fullwidth-left.html">FULL WIDTH - LEFT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-timeline-fullwidth-right.html">FULL WIDTH - RIGHT</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SMALL IMAGE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-smallimg-aside-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-smallimg-aside-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-smallimg-aside-both.html">BOTH SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-smallimg-fullwidth.html">FULL WIDTH</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-smallimg-alternate-1.html">ALTERNATE 1</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-smallimg-alternate-2.html">ALTERNATE 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SINGLE</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-default.html">DEFAULT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-aside-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-aside-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-fullwidth.html">FULL WIDTH</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-small-image-left.html">SMALL IMAGE - LEFT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-small-image-right.html">SMALL IMAGE - RIGHT</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-big-image.html">BIG IMAGE</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-single-fullwidth-image.html">FULLWIDTH IMAGE</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">COMMENTS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-comments-bordered.html#comments">BORDERED COMMENTS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-comments-default.html#comments">DEFAULT COMMENTS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-comments-facebook.html#comments">FACEBOOK COMMENTS</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/blog-comments-disqus.html#comments">DISQUS COMMENTS</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <!-- SHOP--><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SHOP</a>
+                    <ul class="dropdown-menu pull-right has-topBar">
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">1 COLUMN</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-1col-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-1col-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-1col-both.html">BOTH SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-1col-full.html">FULL WIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">2 COLUMNS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-2col-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-2col-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-2col-both.html">BOTH SIDEBAR</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">3 COLUMNS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-3col-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-3col-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-3col-full.html">FULL WIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">4 COLUMNS</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-4col-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-4col-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-4col-full.html">FULL WIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SINGLE PRODUCT</a>
+                        <ul class="dropdown-menu has-topBar">
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-single-left.html">LEFT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-single-right.html">RIGHT SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-single-both.html">BOTH SIDEBAR</a></li>
+                          <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-single-full.html">FULL WIDTH</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-compare.html">COMPARE</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-cart.html">CART</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-checkout.html">CHECKOUT</a></li>
+                      <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shop-checkout-final.html">ORDER PLACED</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown mega-menu">
+                    <!-- SHORTCODES--><a class="dropdown-toggle" href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/feature-menu-9.html#">SHORTCODES</a>
+                    <ul class="dropdown-menu has-topBar">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-animations.html">ANIMATIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-buttons.html">BUTTONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-carousel.html">CAROUSEL</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-charts.html">GRAPHS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-clients.html">CLIENTS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-columns.html">GRID & COLUMNS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-counters.html">COUNTERS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-forms.html">FORM ELEMENTS</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-dividers.html">DIVIDERS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-icon-boxes.html">BOXES & ICONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-galleries.html">GALLERIES</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-headings.html">HEADING STYLES</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-icon-lists.html">ICON LISTS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-labels.html">LABELS & BADGES</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-lightbox.html">LIGHTBOX</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-forms-editors.html">HTML EDITORS</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-list-pannels.html">LIST & PANNELS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-maps.html"><span class="label label-success pull-right">new</span> MAPS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-media-embeds.html">MEDIA EMBEDS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-modals.html">MODAL / POPOVER / NOTIF</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-navigations.html">NAVIGATIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-paginations.html">PAGINATIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-progress-bar.html">PROGRESS BARS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-widgets.html">WIDGETS</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-pricing.html">PRICING BOXES</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-process-steps.html">PROCESS STEPS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-callouts.html">CALLOUTS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-info-bars.html">INFO BARS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-blockquotes.html">BLOCKQUOTES</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-responsive.html">RESPONSIVE</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-sections.html">SECTIONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-social-icons.html">SOCIAL ICONS</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5th">
+                            <ul class="list-unstyled has-topBar">
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-alerts.html">ALERTS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-styled-icons.html">STYLED ICONS</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-tables.html">TABLES</a></li>
+                              <li><a href="http://theme.stepofweb.com/Smarty/v1.2.1/HTML/shortcode-tabs.html">TABS</a></li>
+                              <li><a href="#">TESTIMONIALS</a></li>
+                              <li><a href="#">THUMBNAILS</a></li>
+                              <li><a href="#">TOGGLES</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div><!-- /MAIN-MENU -->
+          </div>
         </div>
-      </div>
+      </div><!-- PAGE HEADER -->
+      <section class="page-header page-header-xs">
+        <div class="container">
+          <h1>ICONS & BOXES</h1>
+          <!-- breadcrumbs-->
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shortcodes</a></li>
+            <li class="active">Icons & Boxes</li>
+          </ol>
+          <!-- /breadcrumbs-->
+        </div>
+      </section><!-- /PAGE HEADER -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-5"><!-- BOX 2 -->
+              <div class="box-static box-transparent box-border-top padding-30">
+                <div class="box-title margin-bottom-30">
+                  <h2 class="size-20">Заявка на электротехническое оборудование №1225408 от 29.04.2017</h2>
+                </div>	Прием ответов до: 05.05.2017 до 17-00<br/>Дата публикации: 01.05.2017<br/>Вам недоступны контакты заказчика<br/>Вы еще не отправили предложение
+              </div><!-- /BOX 2 -->
+            </div>
+            <div class="col-md-6 col-sm-6 pull-right"><!-- CALLOUT -->
+              <div class="callout alert alert-default margin-bottom-60">
+                <div class="row">
+                  <div class="col-md-7 col-sm-7">
+                    <!-- left text-->
+                    <h4>Вы можете получить контакты заказчика и связаться с ним напрямую</h4>
+                  </div>
+                  <!-- /left text-->
+                  <div class="col-md-5 col-sm-5 text-right">
+                    <!-- right btn--><a class="btn btn-primary btn-lg" href="#" rel="nofollow" target="_blank">Получить контакты</a>
+                  </div>
+                  <!-- /right btn-->
+                </div>
+              </div><!-- /CALLOUT -->
+            </div>
+            <div class="col-md-12 margin-top-30 margin-bottom-10">
+              <div class="col-md-6 col-sm-12 row"><!-- SEARCH TABLE -->
+                <div class="dataTables_filter" id="sample_1_filter">
+                  <label>Поиск:
+                    <input class="form-control input-small input-inline" placeholder="" aria-controls="sample_1" type="search"/>
+                  </label>
+                </div><!-- /SEARCH TABLE -->
+              </div>
+              <div class="btn-group pull-right tabletools-topbar"><!-- PDF/CSV/EXCEL/PRINT --><a class="btn btn-sm btn-default DTTT_button_pdf" id="ToolTables_sample_1_0"><span>PDF</span>
+                  <div style="position: absolute; left: 0px; top: 0px; width: 46px; height: 40px; z-index: 99;">
+                    <embed id="ZeroClipboard_TableToolsMovie_1" src="assets/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboard_TableToolsMovie_1" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=46&amp;height=40" wmode="transparent" width="46" align="middle" height="40"/>
+                  </div></a><a class="btn btn-sm btn-default DTTT_button_csv" id="ToolTables_sample_1_1"><span>CSV</span>
+                  <div style="position: absolute; left: 0px; top: 0px; width: 45px; height: 40px; z-index: 99;">
+                    <embed id="ZeroClipboard_TableToolsMovie_2" src="assets/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboard_TableToolsMovie_2" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=45&amp;height=40" wmode="transparent" width="45" align="middle" height="40"/>
+                  </div></a><a class="btn btn-sm btn-default DTTT_button_xls" id="ToolTables_sample_1_2"><span>Excel</span>
+                  <div style="position: absolute; left: 0px; top: 0px; width: 52px; height: 40px; z-index: 99;">
+                    <embed id="ZeroClipboard_TableToolsMovie_3" src="assets/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboard_TableToolsMovie_3" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=3&amp;width=52&amp;height=40" wmode="transparent" width="52" align="middle" height="40"/>
+                  </div></a><a class="btn btn-sm btn-default DTTT_button_print" id="ToolTables_sample_1_3" title="View print view"><span>Print</span></a><!-- PDF/CSV/EXCEL/PRINT --></div>
+            </div>
+            <div class="table-scrollable col-md-12"><!-- TABLE -->
+              <table class="table table-striped table-bordered table-hover dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="4">Заявка покупателя</th>
+                    <th class="text-center" colspan="3">Ваше предложение</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="odd" role="row">
+                    <th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 15px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">№ п/п</th>
+                    <th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 175px;" aria-label="Browser: activate to sort column ascending">Наименование товара</th>
+                    <th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 30px;" aria-label="Platform(s): activate to sort column ascending">Кол-во, ед.</th>
+                    <th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 30px;" aria-label="Engine version: activate to sort column ascending">Ед. изм.</th>
+                    <th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 15px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Кол-во, ед.</th>
+                    <th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 175px;" aria-label="Browser: activate to sort column ascending">Цена, руб с НДС</th>
+                    <th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" style="width: 30px;" aria-label="Platform(s): activate to sort column ascending">Примечание</th>
+                  </tr>
+                  <tr class="odd" role="row">
+                    <td class="sorting_1">1</td>
+                    <td>Кабель ВВГнг(А)-FRLSLTx 5х240 1Кв АЛЮР</td>
+                    <td>204</td>
+                    <td>1.7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="even" role="row">
+                    <td class="sorting_1">2</td>
+                    <td>E40S6-10-3-T-24 Инкрементальный энкодер с диам. корпуса 40 мм, выступ. вал 6 мм, 10 имп/об, 24 VDC, выход Totem pole Autonics</td>
+                    <td>5</td>
+                    <td>1.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="odd" role="row">
+                    <td class="sorting_1">3</td>
+                    <td>EIL580-SY06.5RN.00360.A Baumer - Инкрементальный энкодер 58 мм, выступающий вал 6 мм, 360 импульсов на оборот, питание 8-30VDC, выход HTL, 6 фаз, IP65, рабочая температура -40 +85 С, с кабелем 1 метр</td>
+                    <td>12</td>
+                    <td>1.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="even" role="row">
+                    <td class="sorting_1">4</td>
+                    <td>Автоматический выключатель ВА 47-29, 3P 40А (C) 4,5кА EKF Basic | mcb4729-3-40C | EKF</td>
+                    <td>36</td>
+                    <td>1.9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="odd" role="row">
+                    <td class="sorting_1">5</td>
+                    <td>Перфорированный лоток DKC с высотой боковой стенки 50мм цинк 35252HDZ</td>
+                    <td>90</td>
+                    <td>1.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="even" role="row">
+                    <td class="sorting_1">6</td>
+                    <td>Кабель ППГнг(А) -HF 3х1, 5ок(N, PE) -1 ГОСТ (СЭК)</td>
+                    <td>12000</td>
+                    <td>1.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="odd" role="row">
+                    <td colspan="4"></td>
+                    <td colspan="2"><strong>Итого, руб</strong></td>
+                    <td>0руб.</td>
+                  </tr>
+                  <tr class="even" role="row">
+                    <td colspan="1"></td>
+                    <td><strong>Итого, товаров:</strong></td>
+                    <td colspan="2">6</td>
+                    <td colspan="2"><strong>Итого, товаров</strong></td>
+                    <td>0 товаров</td>
+                  </tr>
+                  <tr class="odd" role="row">
+                    <td colspan="12"></td>
+                  </tr>
+                  <tr class="even" role="row">
+                    <td colspan="1"></td>
+                    <td colspan="3">Обязательна боковая загрузка/выгрузка погрузчиком для кабельных барабанов</td>
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr class="odd" role="row">
+                    <td colspan="1"></td>
+                    <td colspan="3">Сертификаты нужны на всю продукцию</td>
+                    <td colspan="3">
+                      <select class="form-control select1">
+                        <option value="">Да/нет</option>
+                        <option value="1">Да</option>
+                        <option value="2">Нет</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr class="even" role="row">
+                    <td colspan="1"></td>
+                    <td colspan="3">Доставка по Москве до склада покупателя  - 5 км от МКАД</td>
+                    <td colspan="3">
+                      <select class="form-control select2">
+                        <option value="">Да/нет</option>
+                        <option value="1">Да</option>
+                        <option value="2">Нет</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table><!-- /TABLE -->
+            </div>
+            <div class="col-md-12 text-right margin-top-40"><a class="btn btn-primary btn-lg" href="#" rel="nofollow" target="_blank">Отправить предложение</a></div>
+          </div>
+        </div>
+      </section><!-- FOOTER -->
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- Footer Logo--><img class="footer-logo" src="img/logo-footer.png" alt=""/>
+              <!-- Small Description-->
+              <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+              <!-- Contact Address-->
+              <address>
+                <ul class="list-unstyled">
+                  <li class="footer-sprite address">PO Box 21132<br/> Here Weare St, Melbourne<br/> Vivas 2355 Australia<br/></li>
+                  <li class="footer-sprite phone">Phone: 1-800-565-2390</li>
+                  <li class="footer-sprite email"><a href="mailto:support@yourname.com">support@yourname.com</a></li>
+                </ul>
+              </address>
+              <!-- /Contact Address-->
+            </div>
+            <div class="col-md-3">
+              <!-- Latest Blog Post-->
+              <h4 class="letter-spacing-1">LATEST NEWS</h4>
+              <ul class="footer-posts list-unstyled">
+                <li><a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a><small>29 June 2015</small></li>
+                <li><a href="#">Nullam id dolor id nibh ultricies</a><small>29 June 2015</small></li>
+                <li><a href="#">Duis mollis, est non commodo luctus</a><small>29 June 2015</small></li>
+              </ul>
+              <!-- /Latest Blog Post-->
+            </div>
+            <div class="col-md-2">
+              <!-- Links-->
+              <h4 class="letter-spacing-1">EXPLORE SMARTY</h4>
+              <ul class="footer-links list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Our Clients</a></li>
+                <li><a href="#">Our Pricing</a></li>
+                <li><a href="#">Smarty Tour</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+              <!-- /Links-->
+            </div>
+            <div class="col-md-4">
+              <!-- Newsletter Form-->
+              <h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+              <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+              <form class="validate" action="" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right" novalidate="novalidate">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input class="form-control required" id="email" type="email" name="email" placeholder="Enter your Email"/><span class="input-group-btn">
+                    <button class="btn btn-success" type="submit">Subscribe</button></span>
+                </div>
+                <input type="hidden" name="is_ajax" value="true"/>
+              </form>
+              <!-- /Newsletter Form-->
+              <!-- Social Icons-->
+              <div class="margin-top-20"><a class="social-icon social-icon-border social-facebook pull-left" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="icon-facebook"></i><i class="icon-facebook"></i></a><a class="social-icon social-icon-border social-twitter pull-left" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="icon-twitter"></i><i class="icon-twitter"></i></a><a class="social-icon social-icon-border social-gplus pull-left" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google plus"><i class="icon-gplus"></i><i class="icon-gplus"></i></a><a class="social-icon social-icon-border social-linkedin pull-left" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin"><i class="icon-linkedin"></i><i class="icon-linkedin"></i></a><a class="social-icon social-icon-border social-rss pull-left" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rss"><i class="icon-rss"></i><i class="icon-rss"></i></a></div>
+              <!-- /Social Icons-->
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <ul class="pull-right nomargin list-inline mobile-block">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li>•</li>
+              <li><a href="#">Privacy</a></li>
+            </ul>                    © All Rights Reserved, Company LTD
+          </div>
+        </div>
+      </footer><!-- /FOOTER -->
     </div><!-- Scripts -->
     <script type="text/javascript" src="lib/jquery-2.2.3.min/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
