@@ -9750,8 +9750,8 @@ section.dark .select2-container--default .select2-selection--single {
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-selection--single .select2-selection__rendered,
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-	height:40px;
-	line-height:36px;
+	height:47px;
+	line-height:42px;
 
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -9768,7 +9768,9 @@ section.dark .select2-container--default .select2-selection--single {
 	background-color:transparent;
 }
  
- 
+.form-control--custom{
+	height: 47px;
+}
  
 /**	40. Tabs
 *************************************************** **/
